@@ -1,7 +1,9 @@
 # 🧠 Documentación Técnica – Sistema de Facturación en PHP
 
 Autor: Santino Di Domenico
+
 Proyecto: Trabajo Práctico Integrador – Conceptos de Desarollo de Software (UNSO)  
+
 Año: 2025
 
 ---
@@ -57,9 +59,13 @@ Se aplican múltiples niveles:
 ### 3. Seguridad
 
 Técnica	        Implementación
+
 CSRF	        $_SESSION['token'] + random_bytes()
+
 XSS	            htmlspecialchars() en entradas y salidas
+
 Validación	    Evita entradas inválidas o inyectadas
+
 Límite de rango	Cantidad: 1–100, Precio: 0.01–100000
 
 ### 4. Lógica de negocio
