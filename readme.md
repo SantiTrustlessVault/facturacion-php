@@ -63,7 +63,7 @@ Se aplican múltiples niveles:
 | `CSRF` | Formulario principal para ingresar datos del producto     |
 | `XSS`    | Lógica de negocio: validaciones, cálculos y persistencia |
 | `Validación`   | Visualización de productos guardados                     |
-| Límite de rango	Cantidad: 1–100, Precio: 0.01–100000                    |
+| Límite de rango  |	Cantidad: 1–100, Precio: 0.01–100000                    |
 
 
 Técnica	        Implementación
