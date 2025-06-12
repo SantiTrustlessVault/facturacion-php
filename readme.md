@@ -66,16 +66,6 @@ Se aplican múltiples niveles:
 | Límite de rango  |	Cantidad: 1–100, Precio: 0.01–100000                    |
 
 
-Técnica	        Implementación
-
-CSRF	        $_SESSION['token'] + random_bytes()
-
-XSS	            htmlspecialchars() en entradas y salidas
-
-Validación	    Evita entradas inválidas o inyectadas
-
-Límite de rango	Cantidad: 1–100, Precio: 0.01–100000
-
 ### 4. Lógica de negocio
 
 ```
@@ -88,51 +78,51 @@ $total = $subtotal + $montoImpuesto;
 
 ### 5. Persistencia en archivo plano
 
-    Guardado con ```file_put_contents()``` y ```LOCK_EX``` para evitar corrupción.
+    Guardado con `file_put_contents()` y `LOCK_EX` para evitar corrupción.
 
     Lectura con file(), separación con explode('|').
 
 Ventajas:
 
-    Simplicidad
+    -Simplicidad
 
-    Portabilidad
+    -Portabilidad
 
-    Facilidad de debugging
+    -Facilidad de debugging
 
 Limitación:
 
-    No escalable (ideal para ejercicios educativos)
+    -No escalable (ideal para ejercicios educativos)
 
 ### 6. Diseño Web
 
-    Layout responsivo con barra lateral fija
+    -Layout responsivo con barra lateral fija
 
-    Componentes visuales coherentes: botones, tabla, formularios
+    -Componentes visuales coherentes: botones, tabla, formularios
 
-    Distribución clara de contenido en todas las páginas
+    -Distribución clara de contenido en todas las páginas
 
 ### 🧑‍🏫 Enfoque pedagógico
 
 Durante el desarrollo se buscó no solo escribir código que funcione, sino:
 
-    Comentar cada parte importante del código
+    -Comentar cada parte importante del código
 
-    Nombrar variables claramente ($montoImpuesto, $subtotal)
+    -Nombrar variables claramente ($montoImpuesto, $subtotal)
 
-    Usar código claro antes que código complejo
+    -Usar código claro antes que código complejo
 
-    Aplicar buenas prácticas aunque el sistema sea simple
+    -Aplicar buenas prácticas aunque el sistema sea simple
 
 ### 🤝 Trabajo colaborativo y mantenible
 
 # Este proyecto está diseñado para:
 
-    Ser fácil de entender por nuevos desarrolladores
+    -Ser fácil de entender por nuevos desarrolladores
 
-    Dividirse en tareas: uno puede mejorar el frontend, otro la lógica
+    -Dividirse en tareas: uno puede mejorar el frontend, otro la lógica
 
-    Ser base para nuevas funciones como: login, PDF, base de datos, etc.
+    -Ser base para nuevas funciones como: login, PDF, base de datos, etc.
 
 # 🧭 Ideas futuras / To-do
 
@@ -148,11 +138,11 @@ Durante el desarrollo se buscó no solo escribir código que funcione, sino:
 
 ### 📚 Referencias útiles
 
-    PHP Manual
+    -PHP Manual
 
-    W3Schools PHP
+    -W3Schools PHP
 
-    Mozilla HTML Docs
+    -Mozilla HTML Docs
 
     CSS Tricks
 
