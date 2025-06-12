@@ -58,6 +58,14 @@ Se aplican múltiples niveles:
 
 ### 3. Seguridad
 
+| Técnica	         |  Implementación                                               |
+|----------------|------------------------------------------------------------|
+| `CSRF` | Formulario principal para ingresar datos del producto     |
+| `XSS`    | Lógica de negocio: validaciones, cálculos y persistencia |
+| `Validación`   | Visualización de productos guardados                     |
+| Límite de rango	Cantidad: 1–100, Precio: 0.01–100000                    |
+
+
 Técnica	        Implementación
 
 CSRF	        $_SESSION['token'] + random_bytes()
